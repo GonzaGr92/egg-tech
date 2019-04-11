@@ -1,3 +1,5 @@
+//Creo una funcion que recibe dos parametros por referencia, minimo y maximo, 
+//la funcion se asegura de que el maximo sea mayor al minimo antes de terminar su ejecucion
 Funcion leerLimites(minimo Por Referencia, maximo Por Referencia)
 	Escribir "Ingrese el minimo"
 	Leer minimo
@@ -9,6 +11,7 @@ Funcion leerLimites(minimo Por Referencia, maximo Por Referencia)
 	
 FinFuncion
 
+//Creo una funcion que retorna un numero aleatorio entre el minimo y el maximo
 Funcion numeroAleatorio <- calcularAleatorio(min, max)
 	numeroAleatorio = Aleatorio(min + 1, max -1)
 FinFuncion
