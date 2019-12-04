@@ -8,6 +8,11 @@ $(document).ready(function() {
     $('#toggle').click(function() {
         $('#cuadrado').toggle(1500);
     })
+
+    $('nav ul li').on('click', function() {
+        $('nav ul li.active').removeClass('active');
+        $(this).addClass('active');
+    });
 });
 
 var button = document.getElementById('button');

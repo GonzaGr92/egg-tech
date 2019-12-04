@@ -6,17 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Helvetica, sans-serif;
+        }
         #cuadrado {
             border: 1px solid black;
             width: 300px;
             height: 300px;
         }
+        nav ul{
+            display: flex;
+            flex-direction: row;
+        }
+        nav ul li {
+            margin: 0px 10px;
+            list-style: none;
+        }
+        nav ul li:hover {
+            cursor: pointer;
+            background: #ccddee;
+        }
+        nav ul li.active {
+            color: red;
+        }
+        nav {
+            width: 100%;
+            border-bottom: 1px solid black;
+        }
     </style>
 </head>
 <body>
-    <button id="button">Click Me!</button>
-    <button id="toggle">Toggle!</button>
-    <div id="cuadrado"></div>
+    <nav>
+        <ul>
+            <li class="active">Home</li>
+            <li>About Us</li>
+            <li>Contact</li>
+            <li>Login</li>
+        </ul>
+    </nav>
+    <section id="home">
+            <button id="button">Click Me!</button>
+            <button id="toggle">Toggle!</button>
+            <div id="cuadrado"></div>
+    </section>
+    <section id="about_us"></section>
+    <section id="contact"></section>
+    <section id="Login"></section>
+    
 
     <script
         src="https://code.jquery.com/jquery-3.4.1.min.js"
